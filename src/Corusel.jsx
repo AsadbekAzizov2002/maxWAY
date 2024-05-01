@@ -35,26 +35,29 @@ export default function Corusel() {
       <Slider {...settings}>
         <div>
           <div className=" px-10 pt-5">
-            <div className=" flex justify-between items-center">
-             
-              <div className=" flex justify-end">
-                <img className=" h-[580px] w-[1400px]" src={car} />
+            <div className=" w-[380px] h-[170px] md:h-[170px] md:w-[740px] lg:w-[986px] lg:h-[490px] xl:w-[1410px] xl:h-[600px]">
+              <div className="px-5">
+                <img
+                  className=" pb-5 h-[160px] w-[360px] md:w-[730px] md:h-[160px] lg:w-[976px] lg:h-[480px] xl:w-[1405px] xl:h-[580px]"
+                  src={car}
+                />
+                {/* 580 1400 */}
               </div>
             </div>
           </div>{" "}
         </div>
         <div>
           <div className=" px-10 pt-5">
-            <div className=" flex justify-between items-center">
-             
-              <div className=" flex justify-end">
-                <img className=" h-[580px] w-[1400px]" src={clap} />
+            <div className=" ">
+              <div className="  mx-auto">
+                <img
+                  className=" pb-5 h-[160px] w-[360px] md:w-[730px] md:h-[160px] lg:w-[976px] lg:h-[480px] xl:w-[1405px] xl:h-[580px]"
+                  src={clap}
+                />
               </div>
             </div>
           </div>{" "}
         </div>
-       
-        
       </Slider>
     </div>
   );
