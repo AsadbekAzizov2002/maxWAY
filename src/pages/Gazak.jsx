@@ -16,7 +16,7 @@ const Gazak = () => {
           <div>
             <div>
               <h1 className=" px-5 mt-[69px] font-bold text-2xl">🍟Gazaklar</h1>
-              <div className=" gap-10 px-5 flex  ">
+              <div className=" gap-10 px-5 grid grid-cols-2 md:grid-cols-4">
                 <div className=" w-[304px] h-[379px]">
                   <img className=" pt-3 px-3" src="" alt="" />
                   <h2 className=" px-4 pt-3 font-semibold">Fri kartoshkasi</h2>

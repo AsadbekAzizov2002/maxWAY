@@ -15,7 +15,7 @@ const Donarkabob = () => {
               <h1 className=" px-5 mt-[69px] font-bold text-2xl">
                 🍱Donar kebab
               </h1>
-              <div className=" gap-10 px-5 flex  ">
+              <div className=" gap-10 px-5 grid grid-cols-2 md:grid-cols-3">
                 <div className=" w-[304px] h-[379px]">
                   <img className=" pt-3 px-3" src={img15} alt="" />
                   <h2 className=" px-4 pt-3 font-semibold">Donar kebab</h2>

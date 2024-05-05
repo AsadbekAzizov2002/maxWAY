@@ -13,7 +13,7 @@ const MaxiBox = () => {
         <div>
           <div className=" mt-[53px]">
             <h1 className=" font-bold text-2xl">🍟🍔🥤Maxi BOX</h1>
-            <div className=" grid grid-cols-4">
+            <div className=" grid grid-cols-2 md:grid-cols-4">
               <div className=" w-[304px] h-[379px]">
                 <img className=" pt-3 px-3" src={img2} alt="" />
                 <h2 className=" px-4 pt-3 font-semibold">Maxi BOX An'anaviy</h2>

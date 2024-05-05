@@ -1,21 +1,7 @@
 import React from "react";
 
 import { Box, Tab, Tabs } from "@mui/material";
-import { NavLink, Route, Routes } from "react-router-dom";
-import Aksiya from "./pages/Aksiya";
-import Lavash from "./pages/Lavash";
-import MaxiBox from "./pages/MaxiBox";
-import Klapsenvich from "./pages/Klapsenvich";
-import Shaurma from "./pages/Shaurma";
-import Panini from "./pages/Panini";
-import Burger from "./pages/Burger";
-import Donarkabob from "./pages/Donarkabob";
-import Hotdoc from "./pages/Hotdoc";
-import Gazak from "./pages/Gazak";
-import Tamaddi from "./pages/Tamaddi";
-import Desert from "./Desert";
-import Ichimlik from "./pages/Ichimlik";
-import Souslar from "./pages/Souslar";
+
 
 const Header = () => {
   const [value, setValue] = React.useState(0);
