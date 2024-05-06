@@ -23,7 +23,7 @@ const Footer = () => {
                 </NavLink>
               </li>
             </ul>
-            <ul className=" flex gap-5 pl-[400px] text-base font-semibold">
+            <ul className=" md:flex gap-5 md:pl-[400px] text-base font-semibold">
               <li>
                 <NavLink to="/filial">Filiallar</NavLink>
               </li>
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
           <hr className=" mt-5 mb-5" />
-          <div className=" flex gap-[800px] pb-10">
+          <div className=" flex justify-between w-full pb-10">
             <h2>© Delever 2020 - 2024 Barcha huquqlar himoyalangan</h2>
             <div className=" gap-5 flex">
               <Link

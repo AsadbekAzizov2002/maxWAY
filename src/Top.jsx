@@ -34,6 +34,8 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Menyu from "./Menyu";
+import Modal from "./Modal";
 
 //
 
@@ -110,7 +112,7 @@ const Top = () => {
                   alt=""
                 />
               </NavLink>
-              <ul className=" items-center gap-5 hidden md:flex">
+              <ul className=" items-center gap-5 hidden md:flex ">
                 <li>
                   <NavLink to="/">
                     <img
@@ -121,29 +123,32 @@ const Top = () => {
                   </NavLink>
                 </li>
 
-                <li className="">
+                <li className="hover:font-bold active:text-blue-900 active:font-black">
                   <NavLink to="/">Menyu</NavLink>
                 </li>
-                <li>
+                <li className="hover:font-bold active:text-blue-900 active:font-black">
                   <NavLink to="/filial">Filiallar</NavLink>
                 </li>
-                <li>
+                <li className="hover:font-bold active:text-blue-900 active:font-black">
                   <NavLink to="/bizhaqimizda">Bizhaqimizda</NavLink>
                 </li>
-                <li>
+                <li className="hover:font-bold active:text-blue-900 active:font-black">
                   <NavLink to="/boglanish">Bog'lanish</NavLink>
                 </li>
               </ul>
             </div>
             <div className=" hidden md:flex items-center gap-5">
               <div className=" hidden md:flex items-center gap-5">
-                <span>
-                  <RoomIcon />
-                </span>
-                <h2 className=" w-[250px]">
-                  Yetkazib berish yoki Olib ketish Qabul qilib olish turini
-                  tanlang
-                </h2>
+                {/* <button className=" flex items-center">
+                  <span>
+                    <RoomIcon />
+                  </span>
+                  <h2 className=" w-[250px]">
+                    Yetkazib berish yoki Olib ketish Qabul qilib olish turini
+                    tanlang
+                  </h2>
+                </button> */}
+                <Modal />
               </div>
               <span className="  bg-slate-400 rounded">
                 <select className=" w-[50px]" name="uz" id="uz">
@@ -163,14 +168,14 @@ const Top = () => {
                 </li>
               </ul>
               <span className=" ">
-                <React.Fragment >
+                <React.Fragment>
                   <Button variant="outlined" onClick={handleClickOpen}>
                     <span>
                       <PermIdentityIcon />
                     </span>
                   </Button>
-                  <Dialog className=""
-                  
+                  <Dialog
+                    className=""
                     open={openn}
                     onClose={handleClose}
                     PaperProps={{
@@ -185,7 +190,7 @@ const Top = () => {
                       },
                     }}
                   >
-                    <DialogTitle >Tizimga Kirish</DialogTitle>
+                    <DialogTitle>Tizimga Kirish</DialogTitle>
                     <DialogContent>
                       <DialogContentText>
                         Emailingiz bilan tizimga kiring
@@ -212,13 +217,12 @@ const Top = () => {
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<Corusel />} />
+            <Route path="/" element={<Menyu />} />
             <Route path="/filial" element={<Felial />} />
             <Route path="/bizhaqimizda" element={<Bizhaqimizda />} />
             <Route path="/boglanish" element={<Boglanish />} />
             <Route path="/korzinka" element={<Korzinka />} />
           </Routes>
-          <Footer />
         </div>
       </main>
     </div>

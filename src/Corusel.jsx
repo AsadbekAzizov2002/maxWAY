@@ -1,12 +1,10 @@
+
 import React from "react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import car from "./assets/car.png";
-import clap from "./assets/clap.png";
-import Menyu from "./Menyu";
 
 <>
   <link
@@ -34,37 +32,29 @@ export default function Corusel() {
     slidesToScroll: 1,
   };
   return (
-    <div>
-      <div className=" bg-slate-500 px-10">
-        <Slider {...settings}>
-          <div>
-            <div className=" px-10 pt-5">
-              <div className=" w-[380px] h-[170px] md:h-[170px] md:w-[740px] lg:w-[986px] lg:h-[490px] xl:w-[1410px] xl:h-[600px]">
-                <div className="px-5">
-                  <img
-                    className=" pb-5 h-[160px] w-[360px] md:w-[730px] md:h-[160px] lg:w-[976px] lg:h-[480px] xl:w-[1405px] xl:h-[580px]"
-                    src={car}
-                  />
-                  {/* 580 1400 */}
-                </div>
-              </div>
-            </div>{" "}
-          </div>
-          <div>
-            <div className=" px-10 pt-5">
-              <div className=" ">
-                <div className="  mx-auto">
-                  <img
-                    className=" pb-5 h-[160px] w-[360px] md:w-[730px] md:h-[160px] lg:w-[976px] lg:h-[480px] xl:w-[1405px] xl:h-[580px]"
-                    src={clap}
-                  />
-                </div>
-              </div>
-            </div>{" "}
-          </div>
-        </Slider>
-      </div>
-        <Menyu />
+    <div className=" px-10">
+      <Slider {...settings}>
+        <div>
+          <div className=" px-10 mt-16">
+            <div className=" flex justify-center items-center">
+              <img
+                className=" w-full rounded-3xl"
+                src="https://maxway.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Fceefc9aa-89e1-4464-9415-7cabc48a65d1&w=1200&q=75"
+              />
+            </div>
+          </div>{" "}
+        </div>
+        <div>
+          <div className=" px-10 mt-16">
+            <div className=" flex justify-center items-center">
+              <img
+                className=" w-full rounded-3xl"
+                src="https://maxway.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2Feedc6ad0-1c3c-40fb-a3f2-15b807b7ed30&w=1200&q=75"
+              />
+            </div>
+          </div>{" "}
+        </div>
+      </Slider>
     </div>
   );
 }

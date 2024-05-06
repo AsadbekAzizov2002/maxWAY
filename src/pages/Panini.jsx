@@ -13,7 +13,7 @@ const Panini = () => {
   useEffect(() => {
     fetch("https://663746e8288fedf6937fe785.mockapi.io/adminka/v1/products")
       .then((res) => res.json())
-      .then((data) => setFasfood(data.slice(16, 1)));
+      .then((data) => setFasfood(data.slice(16, 17)));
   }, []);
 
   //
@@ -44,12 +44,15 @@ const Panini = () => {
           <div>
             <div>
               <h1 className=" px-5 mt-[69px] font-bold text-2xl">🫔Panini</h1>
-              <div className="grid grid-cols-2 md:grid-cols-4 my-5 space-y-4 space-x-4 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-5 space-y-4 ">
                 {fasfood.map((food) => (
-                  <div className=" shadow-md" key={food.id}>
-                    <div className=" w-[320px] h-[420px] gap-3">
+                  <div
+                    className="hover:shadow-blue-600 hover:shadow-2xl shadow-md  w-[320px] h-[420px]"
+                    key={food.id}
+                  >
+                    <div className=" gap-3">
                       <img
-                        className=" w-[358px] h-[220px]  pt-4 pl-10"
+                        className=" w-[358px] h-[220px]  pt-4 "
                         src={food.productImage}
                         alt=""
                       />

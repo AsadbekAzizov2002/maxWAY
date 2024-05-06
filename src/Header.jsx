@@ -14,7 +14,7 @@ const Header = () => {
     <div>
       <main>
         <div>
-          <div className=" ">
+          <div className=" pos">
             <Box
               sx={{
                 marginLeft: { xs: 1 },
@@ -32,7 +32,7 @@ const Header = () => {
               >
                       <Tab label="🎉 Aksiya 2+1" />
                       <Tab label="🍟🍔🥤Maxi BOX" />
-                      <Tab label="🥪Klab-Sendvich" />
+                       <Tab label="🥪Klab-Sendvich" />
                       <Tab label="🌯Lavas" />
                       <Tab label="🌮Shaurma" />
                       <Tab label="🫔Panini" />

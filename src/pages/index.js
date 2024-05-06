@@ -6,7 +6,7 @@ import Donarkabob from "./Donarkabob";
 import Felial from "./Felial";
 import Gazak from "./Gazak";
 import Hotdoc from "./Hotdoc";
-import Ichimlik from "./Ichimlik";
+import Ichimliklar from "./Ichimliklar";
 import Klapsenvich from "./Klapsenvich";
 import Korzinka from "./Korzinka";
 import Lavash from "./Lavash";
@@ -23,4 +23,4 @@ import Tamaddi from "./Tamaddi";
 
 export default ( Aksiya, MaxiBox,  Klapsenvich, Lavash, Shaurma,  Panini, Burger,  Donarkabob
 
-,Hotdoc,  Gazak,  Tamaddi,  Ichimlik,   Souslar ,   Felial,Bizhaqimizda,Boglanish,Korzinka  )
+,Hotdoc,  Gazak,  Tamaddi,     Souslar ,Ichimliklar,   Felial,Bizhaqimizda,Boglanish,Korzinka  )
