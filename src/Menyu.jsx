@@ -10,12 +10,14 @@ import Burger from "./pages/Burger";
 import Donarkabob from "./pages/Donarkabob";
 import Hotdoc from "./pages/Hotdoc";
 import Gazak from "./pages/Gazak";
+import Desert from "./pages/Desert";
 
 const Menyu = () => {
   return (
     <div>
       <Header />
       <Aksiya />
+      {/* <Desert /> */}
       <MaxiBox />
       <Klapsenvich />
       <Lavash />
@@ -23,8 +25,8 @@ const Menyu = () => {
       <Panini />
       <Burger />
       <Donarkabob />
-      <Hotdoc />
-      <Gazak />
+      {/*<Hotdoc />
+      <Gazak /> */}
     </div>
   );
 };
