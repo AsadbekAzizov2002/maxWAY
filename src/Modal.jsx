@@ -50,7 +50,7 @@ export default function OrderModal() {
       </div>
       {showModal && (
         <div className="fixed z-10 inset-0 overflow-y-auto flex justify-center items-center bg-black bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg w-[800px] flex">
+          <div className="bg-white p-8 rounded-lg w-[1250px] flex">
             <div className="w-2/3 pr-8">
               <div className="flex justify-end">
                 <button
@@ -146,7 +146,21 @@ export default function OrderModal() {
             <div className="w-1/3">
               {/* Placeholder for the map component */}
               <div className="h-[400px] bg-gray-300">
-                {/* Map component goes here */}
+                <div>
+                  <div className=" mt-10">
+                    <iframe
+                      width="400"
+                      height="400"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=520&amp;height=600&amp;hl=en&amp;q=uzbekistab%20,%20tashkent+(MaxWay)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    >
+                      <a href="https://www.gps.ie/">gps vehicle tracker</a>
+                    </iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
