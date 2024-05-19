@@ -45,7 +45,7 @@ export default function OrderModal() {
           <span>
             <RoomIcon />
           </span>
-          <h2 className="w-[250px]">Delivery or Pickup Pickup type choose</h2>
+          <h2 className="w-[250px]">Yetkazib berish</h2>
         </button>
       </div>
       {showModal && (
@@ -73,21 +73,22 @@ export default function OrderModal() {
                   </svg>
                 </button>
               </div>
-              <h1 className="text-xl font-semibold mb-4">
-                Choose the reception type
+              <h1 className="text-xl font-semibold ">
+                Qabul qilib olish turini tanlang
               </h1>
+              <h2 className=" mb-4">Real vaqt va joylashuvga mos menyuni ko'rish uchun</h2>
               <div className="flex mb-4">
                 <button
                   className="bg-[#51267D] text-white rounded-md px-4 py-2 mr-4"
                   onClick={() => handleDeliveryType("delivery")}
                 >
-                  Delivery
+                Yetkazib berish
                 </button>
                 <button
                   className="bg-[#51267D] text-white rounded-md px-4 py-2"
                   onClick={() => handleDeliveryType("takeaway")}
                 >
-                  Take Away
+                 Olib Ketish
                 </button>
               </div>
               {showAddressInput ? (
@@ -103,7 +104,7 @@ export default function OrderModal() {
                     className="bg-[#51267D] text-white rounded-md px-4 py-2 mb-4"
                     onClick={handleConfirmAddress}
                   >
-                    Set Address
+                    Belgilash
                   </button>
                 </>
               ) : (

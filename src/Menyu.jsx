@@ -14,6 +14,7 @@ import Desert from "./pages/Desert";
 import Corusel from "./Corusel";
 import Tamaddi from "./pages/Tamaddi";
 import Ichimliklar from "./pages/Ichimliklar";
+import Souslar from "./pages/Souslar";
 
 const Menyu = () => {
   return (
@@ -33,6 +34,7 @@ const Menyu = () => {
       <Tamaddi />
       <Desert />
       <Ichimliklar />
+      <Souslar />
     </div>
   );
 };
