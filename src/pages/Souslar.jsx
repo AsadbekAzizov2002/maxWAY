@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-
-
+import React, { useEffect, useState } from "react";
 
 const Souslar = () => {
   const [fasfood, setFasfood] = useState([]);
@@ -193,10 +191,4 @@ const Souslar = () => {
   );
 };
 
-export default Souslar
-
-
-
-
-
-
+export default Souslar;
